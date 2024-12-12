@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.first{
+    padding: 30px 200px;
+
+}
+.progress-bar{
+    background-color:  #d12326;
+}
+.progresss{
+    padding-bottom: 50px;
+
+}
+.form-control{
+    height: 60px;
+    width: 700px;
+    background-color: #d0242763 ;
+}
+.form{
+    padding-left: 100px;
+}
+.check{
+    border: 1px solid #d0242763;
+    width: 700px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.form-check-input:checked {
+    background-color: #d12326;
+    border-color: #d12326;
+}
+.btn{
+    width: 400px;
+    margin-left: 300px;
+    margin-top: 40px;
+    border-radius: 15px;
+    background-color:  #d12326;
+}
+.btnb{
+    border: 0px;
+    color: black;
+    margin-left: 400px;
+    background-color:  #f0f0f0;
+}

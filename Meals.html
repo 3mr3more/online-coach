@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/meals.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" id="navbar">
+        <div class="cont-nav">
+        <a class="navbar-brand " href="#" style="padding-left: 30px; margin-top: 20px;"><img src="images/logo (49).png" width="150px"></a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item ">
+                    <a class="nav-link nav-linke" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-linke" href="Activity.html">Activity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-linke" href="Nutrition.html">Nutrition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-linke" href="Training.html">Training</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-linke" href="Sleep.html">Sleep</a>
+                </li>
+                <li class="nav-item">
+                    <i class="nav-link nav-linke"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                      </svg></i>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-linke" href="#"><img id="displayImage" src="./images/21-211738_free-member-icon-download-user-icon-svg-hd.png"width="30" height="25"alt="Image will be displayed here"></a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <header class="row">
+        <section class="col-2">
+            <nav class="nav flex-column">
+                <a class="nav-link active pt-4" aria-current="page" href="#"><h3 style="font-size:20px;">Nutrition</h3></a>
+                <a class="nav-link nav-linke" href="overview.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-graph-up-arrow"style="padding-right: 10px;" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+                </svg>Overview</a>
+                <a class="nav-link nav-linke over" href="Meals.html"><i class="fa-solid fa-utensils" style="padding-right: 10px;"></i>Meals</a>
+                <a class="nav-link nav-linke" href="Macros.html"><i class="fa-solid fa-calculator"style="padding-right: 10px;"></i>Macros</a>
+                <a class="nav-link nav-linke" href="Recipes.html"><i class="fa-solid fa-book"style="padding-right: 10px;"></i>Recipes</a>
+                <a class="nav-link nav-linke" href="Grocery.html"><i class="fa-solid fa-basket-shopping"style="padding-right: 10px;"></i>Grocery List</a>
+            </nav> 
+            <nav class="nav flex-column nav-left">
+                    <a class="nav-link nav-linke" href="setting.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear" style="padding-right: 10px;" viewBox="0 0 16 16">
+                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                    </svg>Settings</a>
+                    <a class="nav-link nav-linke"  href="support.html"><i class="fa-regular fa-circle-question"style="padding-right: 10px;"></i>Help & Feedback</a>
+            </nav>
+        </section>
+        <section class="col-10">
+            <div class="row pt-4" style="width: 500px;margin-left: 5px;"><h2 class="titl">Today's Meals</h2></div>
+            <div class="row">
+              <div class="card mb-3">
+                  <div class="row g-0">
+                      <div class="col-md-4" id="breakfastimg">
+                          <img src="images'meals/ben-kolde-FFqNATH27EM-unsplash.jpg" class="img-fluid rounded-start" alt="..." >
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title">Breakfast</h5>
+                              <p class="card-text" id="breakfast">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-body-secondary">10:00 AM</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card mb-3">
+                  <div class="row g-0">
+                      <div class="col-md-4" id="snackimg">
+                          <img src="images'meals/debby-hudson-bNcMqYvvIJI-unsplash.jpg" class="img-fluid rounded-start" alt="..." >
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title">Snack</h5>
+                              <p class="card-text" id="snack">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-body-secondary">1:00 PM</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="card mb-3">
+                  <div class="row g-0">
+                      <div class="col-md-4" id="lunchimg">
+                          <img src="images'meals/WhatsApp Image 2024-06-12 at 18.57.36_ad6aa4fb.jpg" class="img-fluid rounded-start" alt="..." >
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title">Lunch</h5>
+                              <p class="card-text" id="lunch">590 calories<br> 35g pro, 54g carb, 24g fat</p>
+                              <p class="card-text"><small class="text-body-secondary">4:00 PM</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card mb-3">
+                  <div class="row g-0">
+                      <div class="col-md-4" id="dinnerimg">
+                          <img src="images/fish Image 2024-02-15 at 00.39.50_e114dc18.jpg" class="img-fluid rounded-start" alt="..." >
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title">Dinner</h5>
+                              <p class="card-text" id="dinner">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-body-secondary">9:00 PM</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+              <div class="row pt-4" style="width: 500px;margin-left: 5px;"><h2 class="titl">Tomorrow's Meals</h2></div>
+              <div class="row" ><div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images'meals/brooke-lark-aGjP08-HbYY-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Breakfast</h5>
+                        <p class="card-text"> Scrambled eggs with whole-wheat toast (2 large eggs, 1/2 cup spinach, 1/4 cup chopped tomatoes, 1 tsp olive oil, 1 slice whole-wheat toast)</p>
+                        <p class="card-text"><small class="text-body-secondary">10:00 AM</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images'meals/snickers-protein-smoothie-hero.webp" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Snack</h5>
+                        <p class="card-text">Smoothie (1 cup fruit, 1/2 cup yogurt, 1/2 cup spinach, 1/4 cup water)</p>
+                        <p class="card-text"><small class="text-body-secondary">1:00 PM</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div></div>
+              <div class="row"><div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images'meals/istockphoto-899866394-1024x1024.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Lunch</h5>
+                        <p class="card-text"> Lentil soup with whole-wheat bread (1 cup lentil soup, 1 slice whole-wheat bread)<br>
+                           **Afternoon Snack** Trail mix (1/4 cup almonds, 1/4 cup dried cranberries, 1/4 cup sunflower seeds)</p>
+                        <p class="card-text"><small class="text-body-secondary">4:00 PM</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images'meals/mariana-medvedeva-iNwCO9ycBlc-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Dinner</h5>
+                        <p class="card-text"> Chicken stir-fry with brown rice (4 oz chicken breast, 1 cup mixed vegetables, 1/2 cup brown rice, 1 tbsp soy sauce)</p>
+                        <p class="card-text"><small class="text-body-secondary">9:00 PM</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div></div>
+                <div class="row pt-4" style="width: 500px;margin-left: 5px;"><h2 class="titl">Third day's Meals</h2></div>
+                <div class="row" ><div class="card mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images'meals/chris-ralston-09HGdZzkP-Q-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Breakfast</h5>
+                          <p class="card-text">Whole-wheat pancakes with fruit (2 whole-wheat pancakes, 1/2 cup fruit, 1/4 cup syrup)</p>
+                          <p class="card-text"><small class="text-body-secondary">10:00 AM</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="card mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images'meals/debby-hudson-bNcMqYvvIJI-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Snack</h5>
+                          <p class="card-text">**Afternoon Snack** Banana with almond butter (1 banana, 1 tbsp almond butter)</p>
+                          <p class="card-text"><small class="text-body-secondary">1:00 PM</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                <div class="row"><div class="card mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images'meals/alex-munsell-Yr4n8O_3UPc-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Lunch</h5>
+                          <p class="card-text">Vegetarian chili with cornbread (1 cup vegetarian chili, 1 slice cornbread)</p>
+                          <p class="card-text"><small class="text-body-secondary">4:00 PM</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images'meals/mariana-medvedeva-iNwCO9ycBlc-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Dinner</h5>
+                          <p class="card-text"> Cottage cheese with fruit (1/2 cup cottage cheese, 1/2 cup chopped fruit)</p>
+                          <p class="card-text"><small class="text-body-secondary">9:00 PM</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+                  <div class="row pt-4" style="width: 500px;margin-left: 5px;"><h2 class="titl">Fourth day's Meals</h2></div>
+                  <div class="row" ><div class="card mb-3" style="max-width: 540px;padding: 0px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="images'meals/hanny-naibaho-6JUjdlHyqw0-unsplash.jpg" class="img-fluid rounded-start" alt="..." >
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Breakfast</h5>
+                            <p class="card-text">Yogurt parfait (1 cup non-fat Greek yogurt, 1/2 cup granola, 1/4 cup fruit)</p>
+                            <p class="card-text"><small class="text-body-secondary">10:00 AM</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><div class="card mb-3" >
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="images/eggs Image 2024-02-15 at 00.39.49_a481e933.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Snack</h5>
+                            <p class="card-text">Hard-boiled egg with veggie sticks (1 hard-boiled egg, 1/2 cup carrot sticks, 1/2 cup cucumber sticks)</p>
+                            <p class="card-text"><small class="text-body-secondary">1:00 PM</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+                  <div class="row"><div class="card mb-3" >
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="images'meals/1383254442098.jpeg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Lunch</h5>
+                            <p class="card-text"> Turkey and avocado wrap (4 oz turkey breast, 1/4 avocado, 1/4 cup lettuce, 1/4 cup tomato, 1 whole-wheat tortilla)<br>
+                              **Afternoon Snack** Rice cakes with hummus (2 rice cakes, 2 tablespoons hummus)</p>
+                            <p class="card-text"><small class="text-body-secondary">4:00 PM</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="images'meals/mariana-medvedeva-iNwCO9ycBlc-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Dinner</h5>
+                            <p class="card-text">Chicken and vegetable curry with brown rice (4 oz chicken breast, 1 cup mixed vegetables, 1/2 cup brown rice, 1/2 cup coconut milk)</p>
+                            <p class="card-text"><small class="text-body-secondary">9:00 PM</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+                    <div class="row pt-4" style="width: 500px;margin-left: 5px;"><h2 class="titl">Fifth day's Meals</h2></div>
+                    <div class="row" ><div class="card mb-3" style="max-width: 540px;padding: 0px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="images'meals/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Breakfast</h5>
+                              <p class="card-text">Whole-wheat toast with avocado and egg (2 slices whole-wheat toast, 1/4 avocado, 1 egg).</p>
+                              <p class="card-text"><small class="text-body-secondary">10:00 AM</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div><div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="images'meals/debby-hudson-bNcMqYvvIJI-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Snack</h5>
+                              <p class="card-text"> Fruit salad (1 cup mixed fruit)</p>
+                              <p class="card-text"><small class="text-body-secondary">1:00 PM</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div></div>
+                    <div class="row"><div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="images'meals/alex-munsell-Yr4n8O_3UPc-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Lunch</h5>
+                              <p class="card-text"> Pasta with marinara sauce and meatballs (1 cup pasta, 1/2 cup marinara sauce, 2 meatballs)</p>
+                              <p class="card-text"><small class="text-body-secondary">4:00 PM</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3" >
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="images'meals/mariana-medvedeva-iNwCO9ycBlc-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Dinner</h5>
+                              <p class="card-text">Black bean burger on a whole-wheat bun (1 black bean burger, 1 whole-wheat bun, 1/4 cup lettuce, 1/4 cup tomato, 1 tbsp mustard)<br>
+                                **Afternoon Snack** Popcorn (3 cups air-popped popcorn)</p>
+                              <p class="card-text"><small class="text-body-secondary">9:00 PM</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div></div>
+                      <div class="row pt-4" style="width: 500px;margin-left: 5px;"><h2 class="titl">Sixth day's Meals</h2></div>
+                      <div class="row" ><div class="card mb-3" style="max-width: 540px;padding: 0px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="images'meals/micheile-henderson-vLHzjRNFbEQ-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Breakfast</h5>
+                                <p class="card-text">French toast with fruit (2 slices whole-wheat bread, 1 egg, 1/4 cup milk, 1/4 cup fruit, 1/4 cup syrup)</p>
+                                <p class="card-text"><small class="text-body-secondary">10:00 AM</small></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div><div class="card mb-3" >
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="images'meals/debby-hudson-bNcMqYvvIJI-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Snack</h5>
+                                <p class="card-text"> Trail mix (1/4 cup almonds, 1/4 cup dried cranberries, 1/4 cup sunflower seeds)</p>
+                                <p class="card-text"><small class="text-body-secondary">1:00 PM</small></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div></div>
+                      <div class="row"><div class="card mb-3">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="images'meals/chicken-burrito-bowls-8.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Lunch</h5>
+                                <p class="card-text">Chicken and vegetable stir-fry with brown rice (4 oz chicken breast, 1 cup mixed vegetables, 1/2 cup brown rice, 1 tbsp soy sauce)<br>
+                                  **Afternoon Snack** Yogurt with fruit (1 cup non-fat Greek yogurt, 1/2 cup chopped fruit)</p>
+                                <p class="card-text"><small class="text-body-secondary">4:00 PM</small></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card mb-3">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="images'meals/download.jpeg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Dinner</h5>
+                                <p class="card-text"> Lentil soup with whole-wheat bread (1 cup lentil soup, 1 slice whole-wheat bread)</p>
+                                <p class="card-text"><small class="text-body-secondary">9:00 PM</small></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div></div>
+                        <div class="row pt-4" style="width: 500px;margin-left: 5px;"><h2 class="titl">seventh day's Meals</h2></div>
+                        <div class="row" ><div class="card mb-3" >
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="images'meals/sara-cervera-ohnRXPYXDEE-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Breakfast</h5>
+                                  <p class="card-text"> Smoothie (1 cup fruit, 1/2 cup yogurt, 1/2 cup spinach, 1/4 cup water)</p>
+                                  <p class="card-text"><small class="text-body-secondary">10:00 AM</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div><div class="card mb-3" >
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="images'meals/debby-hudson-bNcMqYvvIJI-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Snack</h5>
+                                  <p class="card-text"> Apple with peanut butter (1 medium apple, 2 tablespoons peanut butter)</p>
+                                  <p class="card-text"><small class="text-body-secondary">1:00 PM</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div></div>
+                        <div class="row"><div class="card mb-3">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="images'meals/1383254442098.jpeg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Lunch</h5>
+                                  <p class="card-text">Tuna salad sandwich on whole-wheat bread (4 oz tuna, 1/4 cup celery, 1/4 cup onion, 1 tbsp mayonnaise, 2 slices whole-wheat bread)<br>
+                                      **Afternoon Snack** Banana with almond butter (1 banana, 1 tbsp almond butter)</p>
+                                  <p class="card-text"><small class="text-body-secondary">4:00 PM</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card mb-3" >
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="images'meals/mariana-medvedeva-iNwCO9ycBlc-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Dinner</h5>
+                                  <p class="card-text">Chicken and vegetable curry with brown rice (4 oz chicken breast, 1 cup mixed vegetables, 1/2 cup brown rice, 1/2 cup coconut milk)</p>
+                                  <p class="card-text"><small class="text-body-secondary">9:00 PM</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div></div>
+                        </section>   
+                        </body>
+                      <script src="js/bootstrap.bundle.min.js"></script>
+                      <script src="js/all.min.js"></script>
+                      <script src="js/overview.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function calculatecalori(h, w, a, gender) {
+        let suggestedCalories;
+        if (gender === "Male") {
+            suggestedCalories = (10 * w) + (6.25 * h) - (5 * a) + 5;
+        } else {
+            suggestedCalories = (10 * w) + (6.25 * h) - (5 * a) - 161;
+        }
+        
+        if (suggestedCalories <= 1500) {
+            suggestedCalories = 1500;
+        } else if (suggestedCalories > 1500 && suggestedCalories <= 2000) {
+            suggestedCalories = 2000;
+        } else if (suggestedCalories > 2000 && suggestedCalories <= 2500) {
+            suggestedCalories = 2500;
+        } else {
+            suggestedCalories = 3000;
+        }
+
+        // Add further assignments and HTML updates as necessary
+        // Ensure the elements exist and the IDs match the HTML
+        
+        if (suggestedCalories === 1500) {
+            // Update other meal details similarly
+            document.getElementById('breakfast').innerHTML = `*Scrambled Eggs with Veggies*<br>
+            2 large eggs scrambled 
+            , 1 cup spinach cooked
+            , 1/2 cup cherry tomatoes halved
+            , 1 tsp olive oil (for cooking)
+            , 1 slice whole-grain toast`;
+            document.getElementById('snack').innerHTML = `Greek Yogurt with Berries and Nuts<br> 
+            1 cup non-fat Greek yogurt ,1/2 cup mixed berries (strawberries, blueberries, raspberries)
+            1 tbsp almonds, chopped`;
+            document.getElementById('snackimg').innerHTML = `<img src="images'meals/20230919180123-greek-20yogurt-20parfait.webp" class="img-fluid rounded h-75 w-100" alt="...">`
+            document.getElementById('lunch').innerHTML = `Chicken and Quinoa Salad<br>
+            3 oz grilled chicken breast ,1/2 cup cooked quinoa ,1 cup mixed greens (spinach, arugula, kale) , 1/4 cup cucumber, sliced 1/4 cup cherry tomatoes, halved ,1 tbsp olive oil and lemon juice dressing`;
+            document.getElementById('dinner').innerHTML = `Salmon with Roasted Vegetables<br>
+            4 oz baked salmon ,1 cup roasted broccoli ,1/2 cup roasted sweet potato ,1 tsp olive oil (for roasting vegetables)`;
+        } else if (suggestedCalories === 2000) {
+            document.getElementById('breakfast').innerHTML = `*Veggie Omelette with Toast*<br>
+            3 large eggs, beaten - 1/2 cup bell peppers, diced - 1/4 cup onions, diced - 1/4 cup mushrooms, sliced - 1 tsp olive oil (for cooking) - 1 slice whole-grain toast - 1 small orange`;
+            document.getElementById('breakfastimg').innerHTML = `<img src="images'meals/48983161312_d4cdbe4f75_b.jpg" class="img-fluid rounded" alt="...">`;
+            document.getElementById('snack').innerHTML = `*Smoothie*<br>
+            1 cup unsweetened almond milk
+            1/2 banana
+            1/2 cup frozen berries (strawberries, blueberries)
+            1 tbsp almond butter
+            1 tbsp chia seeds`;
+            document.getElementById('snackimg').innerHTML = `<img src="images'meals/strawberry-blueberry-banana-smoothie-pic-4-683x1024.jpg"  class="img-fluid rounded h-50 w-100" alt="...">`;
+            document.getElementById('lunch').innerHTML = `*Grilled Chicken Salad*<br>
+            4 oz grilled chicken breast
+            2 cups mixed greens (spinach, arugula, kale)
+            1/2 cup cherry tomatoes, halved
+            1/4 cup cucumber, sliced
+            1/4 avocado, sliced
+            1 tbsp olive oil and balsamic vinegar dressing
+            1 small whole-grain roll`;
+            document.getElementById('lunchimg').innerHTML = `<img src="images'meals/ID01263HERO_GrilledChickenSalad_012-aa3ccb3bb116828c376edf743879bbaf.jpg" class="img-fluid rounded" alt="...">`;
+            document.getElementById('dinner').innerHTML = `*Beef Stir-Fry with Quinoa*<br>
+            4 oz lean beef strips
+            1 cup mixed vegetables (broccoli, bell peppers, snap peas)
+            1/2 cup cooked quinoa
+            1 tbsp soy sauce
+            1 tsp sesame oil (for cooking)`;
+            document.getElementById('dinnerimg').innerHTML = `<img src="images'meals/p2rosda8eyti84hdx93u.jpeg" class="img-fluid rounded" alt="">`;           // Update other meal details similarly
+        } else if (suggestedCalories === 2500) {
+            document.getElementById('breakfast').innerHTML = `*Avocado Toast with Eggs*<br>
+            2 slices whole-grain toast
+            1/2 avocado, mashed
+            2 large eggs, poached or scrambled
+            1 small orange`;
+            document.getElementById('breakfastimg').innerHTML = `<img src="images'meals/Avocado-Toast-Recipe-1200.jpg" class="img-fluid rounded" alt="...">`;
+            document.getElementById('snack').innerHTML = `*Smoothie*<br>
+            1 cup unsweetened almond milk
+            1 banana
+            1 cup spinach
+            1/2 cup frozen mixed berries
+            1 tbsp almond butter
+            1 tbsp chia seeds`;
+            document.getElementById('snackimg').innerHTML = `<img src="images'meals/strawberry-blueberry-banana-smoothie-pic-4-683x1024.jpg"  class="img-fluid rounded h-50 w-100" alt="...">`;
+            document.getElementById('lunch').innerHTML = `*Chicken Quinoa Bowl*<br>
+            4 oz grilled chicken breast
+            1 cup cooked quinoa
+            1 cup mixed greens (spinach, kale, arugula)
+            1/2 cup cherry tomatoes, halved
+            1/4 avocado, sliced
+            2 tbsp olive oil and lemon juice dressing`;
+            document.getElementById('lunchimg').innerHTML = ``;
+            document.getElementById('dinner').innerHTML = `*Beef and Vegetable Stir-Fry*<br>
+            5 oz lean beef strips
+            1 cup broccoli florets
+            1/2 cup bell pepper, sliced
+            1/2 cup snap peas
+            1/2 cup carrots, sliced
+            1 tbsp soy sauce
+            1 tsp sesame oil (for cooking)
+            1 cup cooked brown rice`;
+            document.getElementById('dinnerimg').innerHTML = `<img src="images'meals/beef_stir_fry_and_vegetable_800x800.jpg" class="img-fluid rounded" alt="...">`;            // Update other meal details similarly
+        } else if (suggestedCalories === 3000) {
+            document.getElementById('breakfast').innerHTML = `*Oatmeal with Nuts and Fruit*<br>
+            1 cup rolled oats, cooked in water or milk
+            1 banana, sliced
+            1/4 cup blueberries
+            2 tbsp almond butter
+            2 tbsp chopped walnuts
+            1 tsp honey`;
+            document.getElementById('breakfastimg').innerHTML = `<img src="images'meals/Fruit_and_Nut_Oatmeal_HD-1_HD1280.jpg" class="img-fluid rounded" alt="...">`;
+            document.getElementById('snack').innerHTML = `*Protein Smoothie*<br>
+            1 cup unsweetened almond milk
+            1 banana
+            1 cup spinach
+            1/2 cup frozen mixed berries
+            1 scoop protein powder
+            2 tbsp peanut butter`;
+            document.getElementById('snackimg').innerHTML = `<img src="images'meals/snickers-protein-smoothie-hero.webp" class="img-fluid rounded h-50 w-100" alt="...">`;
+            document.getElementById('lunch').innerHTML = `*Chicken Burrito Bowl*<br>
+            1 cup cooked brown rice
+            4 oz grilled chicken breast
+            1/2 cup black beans
+            1/4 cup corn
+            1/4 avocado, diced
+            1/4 cup shredded cheese
+            1/4 cup salsa
+            2 tbsp sour cream
+            1 cup mixed greens (lettuce, spinach)`;
+            document.getElementById('lunchimg').innerHTML = `<img src="images'meals/chicken-burrito-bowls-8.jpg" class="img-fluid rounded" alt="...">`;
+            document.getElementById('dinner').innerHTML = `*Steak with Quinoa and Vegetables*<br>
+            8 oz grilled steak
+            1 cup cooked quinoa
+            1 cup roasted Brussels sprouts
+            1 cup roasted sweet potatoes
+            1 tbsp olive oil (for roasting vegetables)`;
+            document.getElementById('dinnerimg').innerHTML = `<img src="images'meals/download.jpeg" class="img-fluid rounded" alt="...">`;           // Update other meal details similarly
+        }
+    }
+
+    const storedData = JSON.parse(localStorage.getItem('overviewData'));
+    if (storedData) {
+        calculatecalori(storedData.height, storedData.weight, storedData.age, storedData.gender);
+    }
+});
+
+  </script>
+</html>

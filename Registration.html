@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <section class="body">
+        <div class="row">
+            <div class="col-lg-6 part-from container" id="container">
+                <form class="login100-form validate-form ml-4" id="registrationForm">
+                    <div>
+                        <span class="login100-form-title pt-5 pb-2">Welcome!</span>
+                        <p class="pb-3">Create your account To keep connected with us please login with your personal info</p>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="firstName" class="form-label fs-4">First name</label>
+                            <input type="text" class="form-control" placeholder="First name" id="firstName" required>
+                        </div>
+                        <div class="col">
+                            <label for="lastName" class="form-label fs-4">Last name</label>
+                            <input type="text" class="form-control" placeholder="Last name" id="lastName" required>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="phone" class="form-label fs-4">Phone Number</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">+20</span>
+                            <input type="text" class="form-control" id="phone" required>
+                        </div>
+                    </div>
+                    <div class="col-8 mb-3">
+                        <label for="email" class="form-label fs-4">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="col-8 mb-3">
+                        <label for="password" class="form-label fs-4">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                        <div id="passHelp" class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
+                    </div>
+                    <div class="row container ml-5 mt-5 container">
+                        <div class="col-4"></div>
+                        <div class="col-4"><button type="submit" class="btn btn-primary mb-3">CREATE</button></div>
+                        <div class="col-4"></div>
+                    </div>
+                    <div class="col-11 text-center">
+                        <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 108,174,255,0.2;" onclick="document.location='login.html'" href="#">
+                            Log In
+                            <i class="fa-solid fa-arrow-right"><use xlink:href="#arrow-right"></use></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/login.js"></script>
+</html>

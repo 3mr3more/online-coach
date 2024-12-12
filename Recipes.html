@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/Recipes.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" id="navbar">
+        <div class="cont-nav">
+        <a class="navbar-brand " href="#" style="padding-left: 30px; margin-top: 20px;"><img src="images/logo (49).png" width="150px"></a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item ">
+                    <a class="nav-link nav-linke" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-linke" href="Activity.html">Activity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-linke" href="Nutrition.html">Nutrition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-linke" href="Training.html">Training</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-linke" href="Sleep.html">Sleep</a>
+                </li>
+                <li class="nav-item">
+                    <i class="nav-link nav-linke position-relative"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                      </svg>
+                      <span class="position-absolute top-30 start-60 translate-middle p-2 bg-danger border border-light rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+                      </span></i>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-linke" href="#"><img id="displayImage" src="./images/21-211738_free-member-icon-download-user-icon-svg-hd.png"width="30" height="25"alt="Image will be displayed here"></a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <header class="row">
+        <section class="col-2">
+            <nav class="nav flex-column">
+                <a class="nav-link active pt-4" aria-current="page" href="#"><h3 style="font-size:20px;">Nutrition</h3></a>
+                <a class="nav-link nav-linke" href="overview.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-graph-up-arrow"style="padding-right: 10px;" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+                </svg>Overview</a>
+                <a class="nav-link nav-linke" href="Meals.html"><i class="fa-solid fa-utensils" style="padding-right: 10px;"></i>Meals</a>
+                <a class="nav-link nav-linke" href="Macros.html"><i class="fa-solid fa-calculator"style="padding-right: 10px;"></i>Macros</a>
+                <a class="nav-link nav-linke over" href="Recipes.html"><i class="fa-solid fa-book"style="padding-right: 10px;"></i>Recipes</a>
+                <a class="nav-link nav-linke" href="Grocery.html"><i class="fa-solid fa-basket-shopping"style="padding-right: 10px;"></i>Grocery List</a>
+            </nav> 
+            <nav class="nav flex-column nav-left">
+                    <a class="nav-link nav-linke" href="setting.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear" style="padding-right: 10px;" viewBox="0 0 16 16">
+                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                    </svg>Settings</a>
+                    <a class="nav-link nav-linke"  href="support.html"><i class="fa-regular fa-circle-question"style="padding-right: 10px;"></i>Help & Feedback</a>
+            </nav>
+        </section>
+        <section class="col-10 ">
+            <div class="row pt-4" style="width: 500px;margin-left: 5px;"><h2 class="titl">Recipes</h2></div>
+            <div class="group">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    </g>
+                </svg>
+                <input placeholder="Search recipes" type="search" class="input">
+            </div>
+            <div class="mt-5">
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Quick</button>
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Low Carb</button>
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">High Protein</button>
+                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Vegan</button>
+            </div>
+            <div class="row g-4 mt-3">
+                <div class="col-3">
+                    <div class="collapse" id="multiCollapseExample1">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/Caprese-Salad-main-1.webp" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Caprese Salad</h4>
+                            <h6 class="card-title">Fresh tomatoes, mozzarella cheese, fresh basil leaves, olive oil, balsamic vinegar, salt, and pepper. </h6>
+                          <p class="card-text">10 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse " id="multiCollapseExample1">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/ben-kolde-FFqNATH27EM-unsplash.jpg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Egg Toast</h4>
+                            <h6 class="card-title">Whole-grain bread, ripe egg, cherry tomatoes, lemon juice, salt, and pepper.</h6>
+                          <p class="card-text">5 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse " id="multiCollapseExample1">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/aglio-e-olio-1-3.jpg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Pasta Aglio e Olio</h4>
+                            <h6 class="card-title">Spaghetti pasta, garlic cloves, olive oil, red pepper flakes, fresh parsley, salt, and pepper.</h6>
+                          <p class="card-text">15 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse" id="multiCollapseExample1">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/vegetarian-stir-fry-hero-fe84012.jpg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Vegetable Stir-Fry</h4>
+                            <h6 class="card-title">Assorted vegetables (bell peppers, broccoli, carrots, snap peas, etc.), tofu or chicken (optional), soy sauce, garlic, ginger, sesame oil, and rice or noodles.</h6>
+                          <p class="card-text">20 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="row g-4">
+                <div class="col-3">
+                    <div class="collapse" id="multiCollapseExample2">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/eggplant-parmesan-10-scaled.jpg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Eggplant Parmesan</h4>
+                            <h6 class="card-title">Eggplant, marinara sauce, mozzarella cheese, Parmesan cheese, almond flour, eggs, Italian seasoning, salt, and pepper. </h6>
+                          <p class="card-text">45 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse " id="multiCollapseExample2">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/1383254442098.jpeg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Grilled Lemon Herb Chicken</h4>
+                            <h6 class="card-title">Chicken breasts, lemon juice, olive oil, garlic, fresh herbs (such as thyme, rosemary, or parsley), salt, and pepper. </h6>
+                          <p class="card-text">20 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse" id="multiCollapseExample2">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/Pesto-Zuchini-Pasta-Feat-Image-Square.jpg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Zucchini Noodles with Pesto</h4>
+                            <h6 class="card-title">Zucchini, homemade or store-bought pesto sauce, cherry tomatoes, Parmesan cheese, pine nuts (optional), salt, and pepper.</h6>
+                          <p class="card-text">15 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse " id="multiCollapseExample2">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/fish Image 2024-02-15 at 00.39.50_e114dc18.jpg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Salmon with Asparagus</h4>
+                            <h6 class="card-title">Salmon fillets, asparagus spears, olive oil, lemon juice, garlic, salt, and pepper. </h6>
+                          <p class="card-text">25 minutes</p>
+                        </div>
+                      </div>
+                </div>
+                </div>
+              </div>
+              <div class="row g-4">
+                <div class="col-3">
+                    <div class="collapse" id="multiCollapseExample3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/ID01263HERO_GrilledChickenSalad_012-aa3ccb3bb116828c376edf743879bbaf.jpg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Grilled Chicken Breast with Quinoa and Steamed Broccoli</h4>
+                            <h6 class="card-title">Chicken breast, quinoa, broccoli florets, olive oil, salt, pepper, garlic powder, lemon juice.</h6>
+                          <p class="card-text">30 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse " id="multiCollapseExample3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/TunaSaladStuffedAvocado_4.jpg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Tuna Salad Stuffed Avocado</h4>
+                            <h6 class="card-title"> Canned tuna, avocado, cherry tomatoes, red onion, cucumber, lemon juice, Greek yogurt, Dijon mustard, salt, pepper.</h6>
+                          <p class="card-text">15 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse" id="multiCollapseExample3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/beef_stir_fry_and_vegetable_800x800.jpg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Beef and Vegetable Stir-Fry</h4>
+                            <h6 class="card-title">Lean beef strips, bell peppers, snap peas, carrots, broccoli florets, soy sauce, garlic, ginger, sesame oil, olive oil, salt, pepper.</h6>
+                          <p class="card-text">20 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse " id="multiCollapseExample3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/20230919180123-greek-20yogurt-20parfait.webp" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Greek Yogurt Parfait with Berries and Nuts</h4>
+                            <h6 class="card-title">Greek yogurt, mixed berries (strawberries, blueberries, raspberries), almonds, walnuts, honey.</h6>
+                          <p class="card-text">10 minutes</p>
+                        </div>
+                      </div>
+                </div>
+                </div>
+              </div>
+              <div class="row g-4">
+                <div class="col-3">
+                    <div class="collapse" id="multiCollapseExample4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/OLI-Christmas2019-EverydaySpinachChickpeaPotatoCurry-65d814a.jpg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Chickpea and Vegetable Curry</h4>
+                            <h6 class="card-title">Chickpeas, mixed vegetables (such as bell peppers, carrots, cauliflower), coconut milk, curry paste, onion, garlic, ginger, vegetable broth, olive oil, salt, pepper. </h6>
+                          <p class="card-text">30 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse " id="multiCollapseExample4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/Vegan-Mexican-Bowl-24-500x500.jpg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Vegan Buddha Bowl</h4>
+                            <h6 class="card-title"> Cooked quinoa or brown rice, roasted sweet potatoes, steamed kale, avocado slices, cherry tomatoes, chickpeas (roasted or sautéed), tahini dressing. </h6>
+                          <p class="card-text">25 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse" id="multiCollapseExample4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/black-bean-tacos-11.jpg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Black Bean and Vegetable Tacos</h4>
+                            <h6 class="card-title"> Black beans, corn tortillas, bell peppers, red onion, avocado, salsa, lime, cilantro, olive oil, salt, pepper, cumin, chili powder.</h6>
+                          <p class="card-text">20 minutes</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="collapse " id="multiCollapseExample4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images'meals/vegan-lentil-stew-0b016185b40446ba98409c75dfeaef7f.jpg" height="188px" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Vegan Lentil Soup</h4>
+                            <h6 class="card-title">Lentils, diced tomatoes, vegetable broth, carrots, celery, onion, garlic, olive oil, bay leaves, thyme, salt, pepper.</h6>
+                          <p class="card-text">40 minutes</p>
+                        </div>
+                      </div>
+                </div>
+                </div>
+              </div>
+
+
+        </section>
+    
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/overview.js"></script>
+</html>

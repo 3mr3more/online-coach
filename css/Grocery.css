@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&family=Roboto:wght@500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+body {
+  background-color: whitesmoke;
+}
+.navbar {
+  padding: 0px;
+  margin: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.177);
+}
+.cont-nav {
+  display: flex;
+  padding: 0px 70px;
+  gap: 600px;
+  background-color: whitesmoke;
+}
+.nav-linke,.nav-link {
+  margin-left: 20px;
+  font-weight: bold;
+  color: black;
+  margin-top: 30px;
+}
+.nav-link:hover {
+  color: black;
+}
+.nav-linke:hover {
+  color: #d12326;
+}
+.nav-left {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+.over {
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+p {
+color: #d12326;
+}
+.titl {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 60px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.shopping-list-container,.produce {
+    padding-left: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.shopping-list {
+    list-style: none;
+    padding: 0;
+}
+
+.shopping-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.bi-cart3{
+    background-color: #d123267b;
+    padding: 10px;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+
+.item-category {
+    color: #666;
+    font-size: 0.9em;
+    margin-left: auto;
+}
+
+.item-quantity {
+    font-size: 0.9em;
+    color: #666;
+
+}

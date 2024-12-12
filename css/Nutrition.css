@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&family=Roboto:wght@500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+body {
+  background-color: whitesmoke;
+}
+.navbar {
+  padding: 0px;
+  margin: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.177);
+}
+.cont-nav {
+  display: flex;
+  padding: 0px 70px;
+  gap: 600px;
+  background-color: whitesmoke;
+}
+.nav-linke,.nav-link {
+  margin-left: 20px;
+  font-weight: bold;
+  color: black;
+  margin-top: 30px;
+}
+.nav-link:hover {
+  color: black;
+}
+.nav-linke:hover {
+  color: #d12326;
+}
+.nav-left {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+.over {
+  color: #d12326;
+}
+p {
+  color: #d12326;
+}
+.titl {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.this{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap:50px;
+  padding-left: 100px;
+}
+.header{
+  padding-right: 200px;
+}
+.container{
+  max-width:80%;
+
+} 
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 100px;
+  }
+  
+  .chart-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .calories-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .calories {
+    font-size: 3em;
+    color: #333;
+  }
+  
+  .calories-label {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  canvas {
+    max-width: 100%;
+  
+  }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>  
+  <div class="col-lg-6 part-from container" id="container"> 
+    <form class="login100-form validate-form ml-4" id="loginForm">
+        <div>
+            <span class="login100-form-title pt-5 pb-2">Welcome back!</span>
+            <p class="pb-5">
+                Welcome back! We are so happy to have you here. It's great to see you again.
+                We hope you had a safe and enjoyable time away.
+            </p>
+        </div>
+    
+        <div class="col-8 mb-3">
+            <label for="exampleInputEmail1" class="form-label fs-4">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+        </div>
+        <div class="col-8 mb-3">
+            <label for="exampleInputPassword1" class="form-label fs-4">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" required />
+            <div id="passHelp" class="form-text">
+                Your password must be 8-20 characters long, contain letters and numbers,
+                and must not contain spaces, special characters, or emoji.
+            </div>
+        </div>
+        <div class="row container ml-5 mt-5 container">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <button type="submit" class="btn btn-primary mb-3" id="login">Log In</button>
+            </div>
+        </div>
+        <div class="col-11 text-center mt-2">
+            <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 108, 174, 255, 0.2" onclick="document.location='Registration.html'">
+                Sign-in
+                <i class="fa-solid fa-arrow-right">
+                    <use xlink:href="#arrow-right"></use></i>
+            </a>
+        </div>
+    </form>
+</div>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/login.js" defer></script>
+</html>

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&family=Roboto:wght@500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+body {
+  background-color: whitesmoke;
+}
+.navbar {
+  padding: 0px;
+  margin: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.177);
+}
+.cont-nav {
+  display: flex;
+  padding: 0px 70px;
+  gap: 600px;
+  background-color: whitesmoke;
+}
+.nav-linke,.nav-link {
+  margin-left: 20px;
+  font-weight: bold;
+  color: black;
+  margin-top: 30px;
+}
+.nav-link:hover {
+  color: black;
+}
+.nav-linke:hover {
+  color: #d12326;
+}
+.nav-left {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+.over {
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+p {
+color: #d12326;
+}
+h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-bottom: 10px; 
+}
+.titl {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 60px;
+    font-weight: 800;
+    font-style: normal;
+}
+.edite{
+    --bs-btn-bg: rgba(250, 235, 215, 0.807);
+    border-radius: 20px;
+    padding: 5px 50px;
+}
+
+img{
+  border-radius: 50%;
+  object-fit: cover;
+  background: #dfdfdf;
+
+}

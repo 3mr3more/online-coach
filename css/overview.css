@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+    background-color: whitesmoke;
+}
+.navbar{
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.177);
+}
+.cont-nav{
+display: flex;
+padding: 0px 70px;
+gap: 600px;
+background-color : whitesmoke;
+}
+.nav-linke,.nav-link{
+    margin-left: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 30px;
+}
+.nav-link:hover{
+    color:black;
+
+}
+.nav-linke:hover{
+    color: #d12326;
+}
+.nav-left{
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+.over{
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+.card{
+    background-color: whitesmoke;
+    border: 0px;
+}
+.card-title{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+p{
+    color: #d12326;
+}
+.row{
+    padding-top: 20px;
+    margin-top: 20px;
+
+}
+.titl{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.progress-bar{
+    background-color: #d12326;
+}
+.edite{
+    --bs-btn-bg: rgba(250, 235, 215, 0.807);
+    border-radius: 20px;
+    padding: 5px 50px;
+    
+}
+h5{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/Grocery.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" id="navbar">
+        <div class="cont-nav">
+        <a class="navbar-brand " href="#" style="padding-left: 30px; margin-top: 20px;"><img src="images/logo (49).png" width="150px"></a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item ">
+                    <a class="nav-link nav-linke" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-linke" href="Activity.html">Activity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-linke" href="Nutrition.html">Nutrition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-linke" href="Training.html">Training</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-linke" href="Sleep.html">Sleep</a>
+                </li>
+                <li class="nav-item">
+                    <i class="nav-link nav-linke"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                      </svg></i>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-linke" href="#"><img id="displayImage" src="./images/21-211738_free-member-icon-download-user-icon-svg-hd.png"width="30" height="25"alt="Image will be displayed here"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <header class="row">
+        <section class="col-2">
+            <nav class="nav flex-column">
+                <a class="nav-link active pt-4" aria-current="page" href="#"><h3 style="font-size:20px;">Nutrition</h3></a>
+                <a class="nav-link nav-linke" href="overview.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-graph-up-arrow"style="padding-right: 10px;" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+                </svg>Overview</a>
+                <a class="nav-link nav-linke" href="Meals.html"><i class="fa-solid fa-utensils" style="padding-right: 10px;"></i>Meals</a>
+                <a class="nav-link nav-linke" href="Macros.html"><i class="fa-solid fa-calculator"style="padding-right: 10px;"></i>Macros</a>
+                <a class="nav-link nav-linke" href="Recipes.html"><i class="fa-solid fa-book"style="padding-right: 10px;"></i>Recipes</a>
+                <a class="nav-link nav-linke over" href="Grocery.html"><i class="fa-solid fa-basket-shopping"style="padding-right: 10px;"></i>Grocery List</a>
+            </nav> 
+            <nav class="nav flex-column nav-left">
+                    <a class="nav-link nav-linke" href="setting.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear" style="padding-right: 10px;" viewBox="0 0 16 16">
+                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                    </svg>Settings</a>
+                    <a class="nav-link nav-linke"  href="support.html"><i class="fa-regular fa-circle-question"style="padding-right: 10px;"></i>Help & Feedback</a>
+            </nav>
+        </section>
+        <section class="col-10 ">
+            <div class="shopping-list-container">
+                <div class="row pt-4" style="width: 500px;margin-left: 5px;"><h2 class="titl">Shopping List</h2></div>
+                <p>Here is your list of groceries for the week. Remember, you can add or remove items as needed.</p>
+                <ul class="shopping-list">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="70" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        <label class="col produce">
+                            <h4 class="item-name">Olive oil</h4>
+                            <h6 class="item-category">Pantry</h6>
+                            <h6 class="item-quantity">Quantity: 1</h6>
+                        </label>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="70" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        <label class="col produce">
+                            <h4 class="item-name">spinach</h4>
+                            <h6 class="item-category">Produce</h6>
+                            <h6 class="item-quantity">Quantity: 1</h6>
+                        </label>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="70" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        <label class="col produce">
+                            <h4 class="item-name">Eggs</h4>
+                            <h6 class="item-category">Refrigerated</h6>
+                            <h6 class="item-quantity">Quantity: 1</h6>
+                        </label>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="70" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        <label class="col produce">
+                            <h4 class="item-name">Coconut Milk</h4>
+                            <h6 class="item-category">conned Goods</h6>
+                            <h6 class="item-quantity">Quantity: 1</h6>
+                        </label>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="70" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        <label class="col produce">
+                            <h4 class="item-name">Chicken Breast</h4>
+                            <h6 class="item-category">Meat & Seafood</h6>
+                            <h6 class="item-quantity">Quantity: 1</h6>
+                        </label>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="70" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        <label class="col produce">
+                            <h4 class="item-name">Oatmeal</h4>
+                            <h6 class="item-category">flakes</h6>
+                            <h6 class="item-quantity">Quantity: 1</h6>
+                        </label>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="70" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        <label class="col produce">
+                            <h4 class="item-name">Rice</h4>
+                            <h6 class="item-category">Pantry</h6>
+                            <h6 class="item-quantity">Quantity: 1</h6>
+                        </label>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="70" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        <label class="col produce">
+                            <h4 class="item-name">Blueberry</h4>
+                            <h6 class="item-category">Produce</h6>
+                            <h6 class="item-quantity">Quantity: 1</h6>
+                        </label>
+                    </li>
+                
+                </ul>
+            </div>
+        
+        
+        </section>
+    
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/overview.js"></script>
+
+</html>
